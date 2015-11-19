@@ -39,15 +39,6 @@
             <artifactId>stormpath-default-spring-boot-starter</artifactId>
             <version>${stormpath.version}</version>
         </dependency>
-
-        <!-- Runtime-only dependencies: -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
     </dependencies>
 
     <build>

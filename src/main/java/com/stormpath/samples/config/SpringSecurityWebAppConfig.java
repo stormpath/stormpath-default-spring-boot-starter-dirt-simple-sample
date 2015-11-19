@@ -10,7 +10,7 @@ public class SpringSecurityWebAppConfig extends StormpathWebSecurityConfigurerAd
     public void doConfigure(HttpSecurity http) throws Exception {
         http
             .authorizeRequests()
-            .antMatchers("/")
-            .permitAll();
+                .antMatchers("/restricted").fullyAuthenticated()
+                .antMatchers("/**").permitAll();
     }
 }
